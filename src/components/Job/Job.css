@@ -1,0 +1,122 @@
+.container{
+    position:relative;
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+    grid-template-rows: auto;
+    grid-gap:0 40px;
+}
+.container .box{
+    margin-top:80px;
+    position:relative;
+    margin-left:100px;
+    height:400px;
+    background:#2e4ead;
+    color:#fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #000;
+}
+.container .box:before{
+    content:"";
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    right:-2px;
+    bottom:-2px;
+    background:rgb(16, 4, 82);
+    transform:skew(2deg,2deg);
+    z-index:-1;
+
+}
+
+.container .box:after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:100%;
+    background:rgba(255,255,255,.05);
+}
+.box .items button{
+    position: absolute;
+    top:0;
+    right:-20px;
+    margin-top: 20px;
+}
+.content{
+     position:relative; 
+    padding:20px;
+    transform:translateY(40px);
+}
+.box .content h2{
+     position:absolute; 
+    top:-60px;
+    right:20px;
+    margin:0;
+    padding:0;
+    font-size:14em;
+    color:rgba(255,255,255,.05);
+    transition:0.5s;
+}
+.box:hover .content h2{
+    top:-140px;
+}
+.box .content h3{
+    margin:0 0 10px;
+    padding:0;
+    font-size:24px;
+    font-weight:500;
+    color:#fff;
+}
+.box .content p{
+    margin:0;
+    padding:0;
+    color:#fff;
+    font-size:16px;
+}
+.box .item button{
+    position:relative;
+    margin:20px 0 0;
+    padding:10px 20px;
+    text-decoration: none;
+    border:1px solid #fff;
+    display:inline-block;
+    color:#fff;
+    transition:0.5s;
+    transform:translateY(-40px);
+    opacity:0;
+    visibility:hidden;
+    cursor:pointer;
+}
+.box:hover .item button{
+    transform:translateY(0);
+    opacity:1;
+    visibility: visible;
+    cursor:pointer;
+    background:#2e4ead;
+}
+.box .item button:hover{
+    color:#000;
+    background: #fff;
+    cursor: pointer;
+}
+.timing{
+    display:flex;
+    justify-content: space-between;
+}
+.item span{
+    margin-left:5px;
+}
+.alert{
+    margin-top:10px;
+}
+.val button{
+   
+    margin-bottom:-20px;
+}
+.timing .item p{
+    margin-top:15px;
+}

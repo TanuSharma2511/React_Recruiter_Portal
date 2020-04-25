@@ -1,21 +1,66 @@
-
- body{
-    margin-top:70px;
-    background:#333;
+.arrangement{
+    margin-left:40px;
+    width:1100px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 15px;
+    margin:0 auto;
+}
+.tutorial_list{
+    margin-top:150px;
+}
+.tutorial{
+    margin-top:50px;
+}
+.contact-info{
+    margin-top: 190px;
+    margin-left:185px;
+    display:flex;
+    width: 100%;
+    max-width:1200px;
+    align-items: center;
+    justify-content: center;
+    padding:0 20px;
+}
+.card{
+    background:#2e4ead;
+    padding:0 20px;
+    margin:0 10px;
+    height:200px;
+   width:calc(33% - 20px);
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color:#fff;
+}
+.footer{
+    margin-top:150px;
+    margin-left:170px;
+}
+.wrappers{
+    width: 100%;
+    padding: 10px;
+    margin-top:80px;
   }
-  .card-primary{
-    background:rgb(31, 99, 245) ;
-}
-.card-danger{
-    background: rgb(214, 45, 45);
-}
-.card-success{
-    background:rgb(6, 150, 90);
-}
-.wrap{
-    position:absolute;
-    top:30%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
+  .sidebar{
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    background: #2e4ead;
+    width: 50px;
+    height: calc(100% - 80px);
+    border-bottom-right-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  .sidebar .socio-icons ul{
+      display:flex;
+      margin-left:10px;
+  }
+  .socio-icons ul li .fa .com{
+      color:#fff;
+      font-size:20px;
+      margin-left:10px;
+  }
+
+  
